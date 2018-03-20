@@ -28,8 +28,10 @@ Various algorithms have been formulated in an attempt to generate ever-larger pr
  ```
  ## Refence 
  prime number: http://whatis.techtarget.com/definition/prime-number
+ 
  decide-prime in racket language: https://stackoverflow.com/questions/3345626/finding-a-prime-number-in-scheme-using-natural-recursion
- racket tuotial: http://blog.csdn.net/yemeishenme/article/details/51471037
+ 
+ racket totorial(chinese): http://blog.csdn.net/yemeishenme/article/details/51471037
                                      
                                      
                             
