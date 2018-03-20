@@ -17,11 +17,12 @@ For every prime number p, there exists a prime number p' such that p' is greater
 A computer can be used to test extremely large numbers to see if they are prime.  But, because there is no limit to how large a natural number can be, there is always a point where testing in this manner becomes too great a task even for the most powerful supercomputers.
 
 Various algorithms have been formulated in an attempt to generate ever-larger prime numbers. For example, suppose n is a whole number, and it is not yet known if n is prime or composite. First, take the square root (or the 1/2 power) of n; then round this number up to the next highest whole number and call the result m.  Then find all of the following quotients:
-```                                 qm = n / m
+```          
+                                     qm = n / m
                                  q(m-1) = n / (m-1)
                                  q(m-2) = n / (m-2)
                                  q(m-3) = n / (m-3)
                                      . . .
                                      q3 = n / 3
                                      q2 = n / 2
-                 ```
+                                     ```
