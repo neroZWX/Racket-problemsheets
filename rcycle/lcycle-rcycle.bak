@@ -1,0 +1,6 @@
+#lang racket
+(define (lcycle list)
+  (if (null? list)#F
+      (append(cdr list)
+             (cons(car list)
+                  '()))))
