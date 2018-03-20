@@ -1,7 +1,7 @@
 # Theory of Algorithms
 > lecture : Dr Ian McLoughlin 
 
->moudle :THEORY-OF-ALGORITHMS the year 4
+>module :THEORY-OF-ALGORITHMS the year 4
 
 > solution by ：G00329417/WENXUAN ZHANG
 
