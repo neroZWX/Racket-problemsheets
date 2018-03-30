@@ -1,0 +1,4 @@
+#lang racket
+(define (sublsum list)
+  [(filter (=(apply + list)0))
+    (cdr (combinations list))])
