@@ -1,0 +1,4 @@
+#lang racket
+(define (hamming-weigh l)
+  (count (lambda (n) (not (zero? n)))
+         l))
