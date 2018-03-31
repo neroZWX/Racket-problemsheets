@@ -8,7 +8,7 @@ For example:
 ```
 ## what is hamming-weight
 The Hamming weight of a string is the number of symbols that are different from the zero-symbol of the alphabet used. It is thus equivalent to the Hamming distance from the all-zero string of the same length. like:
-``` 
+``` racket
 ; There are five digits in total except 0 then answer is 5
 > (hamming-weight (list 1 0 1 0 1 1 1 0)) 
 5 
@@ -17,7 +17,7 @@ The Hamming weight of a string is the number of symbols that are different from 
 there art two ways in my solution cases,one of is use lambda function,another is use basic funtion
 
 ## Lambda
-```
+```racket
 (define (hamming-weigh l)
   (count (lambda (n) (not (zero? n)))
          l))
