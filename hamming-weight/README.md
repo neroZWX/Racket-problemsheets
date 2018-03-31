@@ -1,51 +1,51 @@
-# Theory of Algorithms
-> lecture : Dr Ian McLoughlin 
+# hamming-weight
+5. Write a function hamming-weight in Racket that takes a list l as input and returns the number of non-zero elements in it.
 
->module :THEORY-OF-ALGORITHMS the year 4
+For example:
+``` 
+> (hamming-weight (list 1 0 1 0 1 1 1 0)) 
+5 
+```
+## what is hamming-weight
+The Hamming weight of a string is the number of symbols that are different from the zero-symbol of the alphabet used. It is thus equivalent to the Hamming distance from the all-zero string of the same length. like:
+``` 
+;There are five digits in total except 0 then answer is 5
+> (hamming-weight (list 1 0 1 0 1 1 1 0)) 
+5 
+```
+# solutions 
+there art two ways in my solution cases,one of is use lambda function,another is use basic funtion
 
-> solution by ：G00329417/WENXUAN ZHANG
+## Lambda
+```
+(define (hamming-weigh l)
+  (count (lambda (n) (not (zero? n)))
+         l))
+(hamming-weigh (list 1 2 2 2 0));output will be 4
+```
+## basic funtion
+set 1 check the list if null 
+```
+;set 1 check the list if null
+;set 2 check the element of list if is a zero
+;set 3 add 1 to the counter and Retry 
+;set 4 If the above conditions are not satisfied, the results will be displayed directly.
+(define (hamming-weigh l)
+  (cond ((null? l) 0)
+        ((not (= (car l) 0))
+         (+ 1 (amming-weigh (cdr l))))
+        (else  
+         (hamming-weigh (cdr l)))))
+ (hamming-weigh (list 1 2 2 2 0));output will be 4
+```
+# output result
+![](https://github.com/neroZWX/Racket-problemsheets/blob/master/hamming-weight/output.PNG)
+# Reference
+lambda:https://stackoverflow.com/questions/36595710/counting-non-zero-values-from-a-list-with-scheme/36601853#36601853
 
-There are total nine taks in this problem-sheet and solution is  in the Racket programming language 
-![](https://github.com/neroZWX/Racket-problemsheets/blob/master/1-3.PNG)
-![](https://github.com/neroZWX/Racket-problemsheets/blob/master/4-5.PNG)
-![](https://github.com/neroZWX/Racket-problemsheets/blob/master/6-9.PNG)
+https://docs.racket-lang.org/guide/lambda.html
 
-## What is Racket language?
-Racket (formerly PLT Scheme) is a general purpose, multi-paradigm programming language in the Lisp-Scheme family. One of its design goals is to serve as a platform for language creation, design, and implementation.The language is used in a variety of contexts such as scripting, general-purpose programming, computer science education, and research.
+https://stackoverflow.com/a/36601853
 
-The platform provides an implementation of the Racket language (including a sophisticated run-time system, various libraries, JIT compiler, and more) along with a development environment called DrRacket (formerly named DrScheme) written in Racket itself. The IDE and an accompanying programming curriculum is used in the ProgramByDesign outreach program, an attempt to turn computing and programming into "an indispensable part of the liberal arts curriculum". The core language is known for its extensive macro system which enables the creation of embedded and domain-specific languages, language constructs such as classes or modules, and separate dialects of Racket with different semantics.
-## How to run?
-1.Click [here](https://download.racket-lang.org/) download Racket software.
 
-2.Unzip the downloaded files to any directory on your computer,then you can get Racket and DrRacket.
 
-3.download this [repositoriy](https://github.com/neroZWX/Racket-problemsheets)and unzip your computer.
-
-4.Double click the file to open any of the suffixes named rkt,then you can run it  on DrRacket.
-## what is difference between racket and DrRacket?
-DrRacket is a graphical environment for developing programs using the Racket programming languages.DRracket has the following functions
-
-1 Interface Essentials
-
-2 Languages
-
-3 Interface Reference
-
-4 Extending DrRacket
-
-For detailed information, please see [DrRacket](https://docs.racket-lang.org/drracket/extending-drracket.html)
-
-Drracket is more like a complete software that has other functions in addition to the base Racket language,like the DrRacket window has three parts: a row of buttons at the top, two editing panels in the middle, and a status line at the bottom.
-Racket is just a window software that can only run the language of racket, without any other function, just like CMD，powershell and so on.
-## Renference
-Racket wiki: https://en.wikipedia.org/wiki/Racket_(programming_language)
-
-DrRacket :https://docs.racket-lang.org/drracket/index.html
-
-Racket programming language official webside: https://racket-lang.org/
-
-Racket tutorial: https://docs.racket-lang.org/quick/
-
-https://www.it.uu.se/edu/course/homepage/avfunpro/ht13/lectures/Racket-1-Intro.pdf
-
-Racket tutorial(chinese): http://blog.csdn.net/yemeishenme/article/details/51471037
