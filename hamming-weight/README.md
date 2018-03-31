@@ -2,7 +2,7 @@
 5. Write a function hamming-weight in Racket that takes a list l as input and returns the number of non-zero elements in it.
 
 For example:
-``` 
+``` racket
 > (hamming-weight (list 1 0 1 0 1 1 1 0)) 
 5 
 ```
@@ -24,7 +24,7 @@ there art two ways in my solution cases,one of is use lambda function,another is
 (hamming-weigh (list 1 2 2 2 0)); output will be 4
 ```
 ## basic funtion 
-```
+```racket
 ; set 1 check the list if null
 ; set 2 check the element of list if is a zero
 ; set 3 add 1 to the counter and Retry 
