@@ -5,10 +5,11 @@
 
 > solution by ：G00329417/WENXUAN ZHANG
 
-There are total nine taks in this problem-sheet and solution is  in the Racket programming language 
+There are total ten taks in this problem-sheet and solution is  in the Racket programming language 
 ![](https://github.com/neroZWX/Racket-problemsheets/blob/master/1-3.PNG)
 ![](https://github.com/neroZWX/Racket-problemsheets/blob/master/4-5.PNG)
 ![](https://github.com/neroZWX/Racket-problemsheets/blob/master/6-9.PNG)
+![](https://github.com/neroZWX/Racket-problemsheets/blob/master/10.PNG)
 
 ## What is Racket language?
 Racket (formerly PLT Scheme) is a general purpose, multi-paradigm programming language in the Lisp-Scheme family. One of its design goals is to serve as a platform for language creation, design, and implementation.The language is used in a variety of contexts such as scripting, general-purpose programming, computer science education, and research.
