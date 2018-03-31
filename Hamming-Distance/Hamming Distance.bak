@@ -1,0 +1,8 @@
+#lang racket
+(define (hamming-distance l1 l2);def
+ (if (null? l1) 
+      0 
+      (if (null? l2)
+          0
+   (if (= (car l1) (car l2)) (hamming-distance (cdr l1)(cdr l2))
+    (+ 1 (hamming-distance (cdr l1) (cdr l2)))))))
