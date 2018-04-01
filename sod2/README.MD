@@ -1,13 +1,14 @@
 # SOD2
 9. Write a function sod2 in Racket that takes three lists x, y and z of equal length and containingonly0’sand1’s. Itshouldreturnalistcontaininga1wherethenumberof 1’s in a given position in x, y and z contains an odd nubmer of 1’s, and 0 otherwise.
 
-For example: 
+ For example: 
 ```racket 
 > (sod2 (list 0 0 0 0 1 1 1 1) (list 0 0 1 1 0 0 1 1) (list 0 1 0 1 0 1 0 1)) 
 '(0 1 1 0 1 0 0 1) 
 ```
-# map and lambda
+## map and lambda
 Applies proc to the elements of the lsts from the first elements to the last. The proc argument must accept the same number of arguments as the number of supplied lsts, and all lsts must have the same number of elements. The result is a list containing each result of proc in order.
+
 Using lambda'to create a function,
 The function always returns the value of its last expression.
 Examples:
@@ -23,7 +24,7 @@ Examples:
        '(10 100 1000 10000))
 '(11 102 1003 10004)
 ```
-# soultion
+## soultion
 step1
 ```racket
 ;define x y z lists first
@@ -50,7 +51,7 @@ put step1 and step2 together
        (map (lambda (x y z)
         (if (even? (+ x y z) ) 0 1)) x y z)))
 ```
-# output
+## output
 ![](https://github.com/neroZWX/Racket-problemsheets/blob/master/sod2/output.PNG)
-# reference
+## reference
 https://docs.racket-lang.org/reference/pairs.html
