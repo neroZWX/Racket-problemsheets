@@ -9,4 +9,31 @@ For example:
 > (rcycle (list 1 2 3 4 5))
 '(5 1 2 3 4)
 ```
-adapt from: https://github.com/neroZWX/Racket-problemsheets/blob/master/problem-sheet-racket.pdf
+# soultion
+For lcycle:
+```racket
+(define (lcycle list);define a method lcycle as list
+  (if (null? list)#F;if the list is null then return false
+      (append(cdr list);get the second number in the list and get another list 
+             (cons(car list);display the remaining numbers then merge two lists
+                  '()))))
+```
+FOR recyle:
+step1 
+```racket
+;get reversel fuction first
+(define(reversel l)
+ (define (reversel-aux l a)
+  (if (null? l)
+   a
+   (reversel-aux (cdr l)(cons (car l) a))))
+ (reversel-aux l null))   
+ ```
+ step2
+ ```racket
+ (define(recyle l);use reversel method first get the last number in a list,and get another list display remaining numbers
+  (append (list(car (reversel l)));merge that two lists and display
+          (reversel (cdr (reversel l)))))
+ ```     
+ ## reference
+reversel fuction adapt from: https://github.com/neroZWX/Racket-problemsheets/blob/master/problem-sheet-racket.pdf
