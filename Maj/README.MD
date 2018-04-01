@@ -11,8 +11,8 @@ Majority function (sometimes quorum function) is a threshold function that produ
 
 For example:
 ```
-Inputs	Output
-X	Y	Z 	   Q
+Inputs	       Output
+X	Y	Z 	     Q
 0	0	0	     0
 0	0	1	     0
 0	1	0	     0
