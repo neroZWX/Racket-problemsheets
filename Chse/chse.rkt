@@ -7,4 +7,4 @@
                        ;if the first element of list x not equal 1 then do cons first element of z list and recur.
         (cons(car y)(chse(cdr x)(cdr y)(cdr z)))
         (cons(car z)(chse(cdr x)(cdr y)(cdr z))))))
-(chse (list 0 0 0 0 1 1 1 1) (list 0 0 1 1 0 0 1 1) (list 0 1 0 1 0 1 0 1))
+(chse (list 0 0 0 0 1 1 1 1) (list 0 0 1 1 0 0 1 1) (list 0 1 0 1 0 1 0 1));the result will be '(0 1 0 1 0 0 1 1)
