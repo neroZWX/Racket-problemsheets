@@ -37,5 +37,7 @@ step 2
     (if (= (car x) (car z)) (cons (car x) (maj (cdr x) (cdr y) (cdr z)))
     (cons (car y) (maj (cdr x) (cdr y) (cdr z)))))))
 ```
+# output
+![](https://github.com/neroZWX/Racket-problemsheets/blob/master/Maj/output.PNG)
 ## Reference
 https://en.wikichip.org/wiki/boolean_algebra/majority_function
