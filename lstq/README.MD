@@ -1,6 +1,6 @@
 # Lstq
 10. Write a function lstq in Racket that takes as arguments two lists l and m of equal length and containing numbers. It should return d, the distance given by the sum of the square residuals between the numbers in the lists: 
-![](https://github.com/neroZWX/Racket-problemsheets/blob/master/lstq/algoritm.PNG)
+                             ![](https://github.com/neroZWX/Racket-problemsheets/blob/master/lstq/algoritm.PNG)
 
 This means take the ith element of m from the ith element of l and square the result for all i. Then add all of those to get d. For example: 
 ```racket
