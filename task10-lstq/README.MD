@@ -42,7 +42,7 @@ Put it all togehter
      (lstq (cdr x) (cdr y))))))
  ```
  ## output 
- ![](https://github.com/neroZWX/Racket-problemsheets/blob/master/lstq/output.PNG)
+ ![](https://github.com/neroZWX/Racket-problemsheets/blob/master/task10-lstq/output.PNG)
  ## References
  https://stackoverflow.com/questions/22560573/how-to-do-square-in-racket
  
